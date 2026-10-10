@@ -1,0 +1,41 @@
+#home{
+    font-size: larger;
+    width: 60%;
+    height: 20vh;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: azure;
+}
+
+#name {
+    font-size: xxx-large;
+    color: #165a5a;
+}
+
+#info{
+    border-radius: 5px;
+    background-color: #165a5a;
+    padding: 20px;
+    margin: 20px;
+}
+
+#titles{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 5px;
+    color: #165a5a;
+    justify-content: center;
+    align-content: center;
+    font-size: x-large;
+}
+
+#description {
+    margin: 5px;
+    padding: 5px;
+}

@@ -6,9 +6,17 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Cristian Răduță - Portfolio</title>
 	</head>
 	<body>
+        <nav>
+            <div class="nav-list">
+                <a class="button" href="#">Home</a>
+                <a class="button" href="#">About</a>
+                <a class="button" href="#">Projects</a>
+                <a class="button" href="#">Contact</a>
+            </div>
+        </nav>
 		<slot />
 	</body>
 </html>
@@ -19,5 +27,67 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+
+        font-family:
+                ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
+                monospace;
 	}
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        background-color: #165a5a;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-list {
+        justify-self: center;
+
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        color: #111827;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: rgb(78, 80, 86);
+    }
+
+    a.button {
+        //color: white;
+        //background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+        background-color: azure;
+        box-shadow:
+                inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+                inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+    }
+
+    a.button:hover {
+        color: rgb(230, 230, 230);
+        box-shadow: none;
+    }
+
 </style>
