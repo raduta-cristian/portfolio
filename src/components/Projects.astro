@@ -1,0 +1,36 @@
+---
+import "../styling/projects.css"
+import Project from "./Project.astro";
+import coop3dImage from "../assets/coop3d_multiplayer.gif";
+import sandboxImage from "../assets/take-off.gif";
+import artistImage from "../assets/artist.gif";
+---
+<div id="projects" class="section-title"> Highlighted Projects</div>
+<div class="project-list" >
+    <Project
+            title="COOP3D"
+            keywords="React | Three.JS | Java Spring"
+            description="COOP3D is a web app that allows users to edit 3D models with other collaborators, in real-time. The client-side program is made with React and Three.JS, while the backend coordinating server is made with Java Spring. Implemented my own 3D model transformations, synchronization / conflict-resolution algorithms (based on Operational Transformation) and account management systems."
+            link="Github"
+            url="https://github.com/raduta-cristian/coop3d"
+            image={coop3dImage}
+            w ={600}
+            h ={300}
+    ></Project>
+    <Project
+            title="Superpower Sandbox"
+            keywords="Unity 3D | Computer Shaders | Jobs | Physics"
+            description="Fly fast and punch hard in this physics based tech demo, that showcases superhero-like mechanics combined with destructible terrain. You can fly into terrain at high speed to create impact explosions or punch object to make them fly away. Implemented Marching Cubes algorithm with both Compute Shader and Burst Jobs, and made a smooth character controller with visual effects."
+            link="Itch.io"
+            url="https://qris01.itch.io/superpower-sandbox"
+            image={sandboxImage}
+    ></Project>
+    <Project
+        title="An artist's retreat"
+        keywords="Godot | Drawing System"
+        description="An artist's retreat' is a painting and gardening game, where you can use a drawing tablet or a mouse to draw not only on canvases, but also on wheat and flower fields. Tend to your garden by planting and watering the crops, decorate the flower garden with your own color patterns, and most importantly, create paintings for a lovely art expo."
+        link="Itch.io"
+        url="https://qris01.itch.io/an-artists-retreat"
+        image={artistImage}
+    ></Project>
+</div>

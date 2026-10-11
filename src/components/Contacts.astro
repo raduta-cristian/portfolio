@@ -1,0 +1,33 @@
+---
+import "../styling/contacts.css"
+import Contact from "./Contact.astro";
+import githubLogo from "../assets/Octicons-mark-github.svg"
+import itchLogo from "../assets/itchio-textless-black.svg"
+import linkedInLogo from "../assets/linkedin.png"
+---
+
+<div class="section-title" id="contact">Contact</div>
+<div class="contact-list">
+    <Contact
+        text="radutacristian.dev@gmail.com"
+        alt="Email"
+    ></Contact>
+    <Contact
+            text="itch.io"
+            alt="Itch.io"
+            url="https://qris01.itch.io/"
+            logo={itchLogo}
+    ></Contact>
+    <Contact
+            text="github"
+            alt="Github"
+            url="https://github.com/raduta-cristian"
+            logo={githubLogo}
+    ></Contact>
+    <Contact
+            text="linkedin"
+            alt="LinkedIn"
+            url="https://www.linkedin.com/in/cristian-r%C4%83du%C8%9B%C4%83-12bb75378/"
+            logo={linkedInLogo}
+    ></Contact>
+</div>

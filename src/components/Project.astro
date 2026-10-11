@@ -1,0 +1,26 @@
+---
+import "../styling/projects.css"
+const { title, keywords, description, link, url, image, w, h } = Astro.props;
+
+---
+
+<div class="project">
+
+    <div class="project-display">
+        {
+            image &&
+            <img src={image.src} width={w ? w : "600"} height={h ? h : "350"} alt="coop3d multiplayer demo">
+        }
+    </div>
+    <div class="project-details">
+        <div class="project-title">{title}</div>
+        <div class="project-keywords">
+            {keywords}
+        </div>
+        <div class="project-description">{description}</div>
+        <div class="project-links">
+            <a class="button" target="_blank" href={url} >{link}</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,33 @@
+.experience-list {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.experience {
+
+    margin: 10px;
+    padding: 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.experience-title{
+    color: var(--tertiary-color);
+    margin: 10px;
+    font-size: x-large;
+}
+
+.experience-company{
+    margin: 10px;
+    font-weight: bold;
+}
+
+.experience-time{
+    margin: 10px;
+
+}

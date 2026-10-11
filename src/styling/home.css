@@ -1,41 +1,51 @@
-#home{
+.home{
     font-size: larger;
-    width: 60%;
-    height: 20vh;
+    /*width: 80%;*/
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: azure;
+    color: var(--secondary-color);
+    max-width: 80%;
 }
 
-#name {
-    font-size: xxx-large;
-    color: #165a5a;
+.name {
+    font-size: 60px;
+    color: var(--primary-color);
+    margin: 10px;
 }
 
-#info{
+.info{
     border-radius: 5px;
-    background-color: #165a5a;
+    background-color: var(--primary-color);
     padding: 20px;
     margin: 20px;
 }
 
-#titles{
+.titles{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    background-color: azure;
+    padding: 15px;
+    /*background-color: var(pr);*/
     border-radius: 5px;
-    color: #165a5a;
+    color: var(--tertiary-color);
     justify-content: center;
     align-content: center;
-    font-size: x-large;
+    font-size: xxx-large;
+    font-weight: bolder;
 }
 
-#description {
-    margin: 5px;
+.description {
+    margin: 30px;
     padding: 5px;
+    font-size: large;
+
+}
+
+@media screen and (max-width: 1000px){
+    .home {
+        max-width: none;
+    }
 }

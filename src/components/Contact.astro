@@ -1,0 +1,21 @@
+---
+
+import "../styling/contacts.css"
+const {text, logo, url, alt} = Astro.props;
+---
+
+<div class="contact">
+    {url ?
+        <a class="button" href={url} target="_blank">
+            {logo &&
+                <img src={logo.src} alt={alt} width="30" height="30">}
+            {text}
+        </a>
+        : <div>
+            {logo &&
+                <img src={logo.src} alt={alt} width="30" height="30">}
+            {text}
+
+        </div>
+    }
+</div>

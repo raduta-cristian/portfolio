@@ -3,13 +3,17 @@ import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import '../styling/main.css'
 import Home from "./Home.astro";
+import Projects from "./Projects.astro";
+import Contacts from "./Contacts.astro";
+import Experience from "./Experience.astro";
 ---
 
-<div id="container">
     <!--<img id="background" src={background.src} alt="" fetchpriority="high" />-->
 	<main>
-		<section id="hero">
             <Home></Home>
+            <Projects></Projects>
+            <Experience></Experience>
+            <Contacts></Contacts>
 			<!--<a href="https://astro.build">-->
 			<!--	<img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />-->
 			<!--</a>-->
@@ -34,7 +38,6 @@ import Home from "./Home.astro";
 			<!--		</svg>-->
 			<!--	</a>-->
 			<!--</section>-->
-		</section>
 	</main>
 
 	<!--<a href="https://astro.build/blog/astro-7/" id="news" class="box">-->
@@ -50,4 +53,3 @@ import Home from "./Home.astro";
 	<!--		7.0's new features.-->
 	<!--	</p>-->
 	<!--</a>-->
-</div>
