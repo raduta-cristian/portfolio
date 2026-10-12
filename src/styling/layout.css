@@ -107,4 +107,8 @@ a.button:hover {
     .nav-title{
         display: none;
     }
+
+    .nav-list a{
+        font-size: 10px;
+    }
 }

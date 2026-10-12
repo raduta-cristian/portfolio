@@ -9,6 +9,7 @@
     border: 1px solid var(--primary-color) !important;
     border-radius: 10px;
     background-color: var(--primary-color);
+    margin: 10px;
 }
 
 .contact {
